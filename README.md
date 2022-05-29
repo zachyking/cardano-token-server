@@ -19,7 +19,29 @@ BLOCKFROST_URL='https://cardano-mainnet.blockfrost.io/api/v0' || 'https://cardan
 BLOCKFROST_NETWORK='Testnet' || 'Mainnet'
 ```
 
-## Validation
+## REQUESTS
+Requires transaction and signature hex string and the body as `application/json`
+### TYPE: 
+```
+type SubmitReqBody = {
+    txHex: string
+    signatureHex: string
+}
+```
+### MAKE A REQUEST:
+```
+const reqBody = {txHex: txHex, signatureHex: signatureHex}
+const rawResponse = await fetch(`http://localhost:8080/submit`, {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(reqBody)
+});
+```
+
+## VALIDATION
 Implement custom validation in `cardano-utils.ts`
 ```
 //write custom validation
