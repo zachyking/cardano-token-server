@@ -11,6 +11,13 @@ npm run build
 npm run start
 ```
 
+## ENVIRONMENT VARIABLES
+```
+SERVER_PRIVKEY='' //server's private key
+BLOCKFROST_API_KEY='' //your API key, get one at https://blockfrost.io/
+BLOCKFROST_URL='https://cardano-mainnet.blockfrost.io/api/v0' || 'https://cardano-testnet.blockfrost.io/api/v0'
+BLOCKFROST_NETWORK='Testnet' || 'Mainnet'
+```
 
 ## Validation
 Implement custom validation in `cardano-utils.ts`
@@ -20,3 +27,4 @@ const validate = async () => {
     return true
 }
 ```
+
