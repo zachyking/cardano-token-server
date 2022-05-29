@@ -1,4 +1,4 @@
-# VALIDATE AND SIGN API
+# CARDANO TOKEN SERVER
 
 Cardano multisig tx backend validating, signing and submitting in `concurrency = 1` mode. Next one starts after previous finishes even when parallel requests are happening.
 
