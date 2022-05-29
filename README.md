@@ -1,6 +1,6 @@
-# SAFE-JOBS API
+# VALIDATE AND SIGN API
 
-Process jobs in `concurrency = 1` mode, next one starts after previous finishes even when parallel requests are happening.
+Cardano multisig tx backend validating, signing and submitting in `concurrency = 1` mode. Next one starts after previous finishes even when parallel requests are happening.
 
 ## Uses Fastify, to build:
 ```
@@ -11,7 +11,12 @@ npm run build
 npm run start
 ```
 
-## Simple test:
+
+## Validation
+Implement custom validation in `cardano-utils.ts`
 ```
-curl http://127.0.0.1:8080/ping & curl http://127.0.0.1:8080/ping & curl http://127.0.0.1:8080/ping
+//write custom validation
+const validate = async () => {
+    return true
+}
 ```

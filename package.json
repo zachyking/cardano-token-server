@@ -1,7 +1,7 @@
 {
-  "name": "safe-jobs",
+  "name": "api-cardano-validate-and-sign",
   "version": "1.0.0",
-  "description": "Minimal API with jobs that can't be run in parallel.",
+  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "GPLv3",
   "dependencies": {
     "@fastify/cors": "^7.0.0",
     "bottleneck": "^2.19.5",
