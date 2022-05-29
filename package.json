@@ -1,5 +1,5 @@
 {
-  "name": "api-cardano-validate-and-sign",
+  "name": "cardano-token-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
